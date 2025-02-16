@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Load data from JSON file
-    fetch('../json/data.json')
+    // Load JSON
+    fetch('json/data.json')
         .then(response => response.json())
         .then(data => {
             initialize(data.texts, data.buttonLabels, data.symbolCopy, data.latexCopy);
@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initialize(texts, buttonLabels, symbolCopy, latexCopy) {
-    // Handle grid item clicks for copying text
+
     document.addEventListener('click', (event) => {
         const gridItem = event.target.closest('.grid-item');
-        if (!gridItem) return; // click was not inside a grid-item
+        if (!gridItem) return;
 
         const activeStyle = document.querySelector('.toggle-style-button.active').getAttribute('data-style');
         const topic = gridItem.closest('.grid-container').getAttribute('data-topic');
@@ -30,7 +30,7 @@ function initialize(texts, buttonLabels, symbolCopy, latexCopy) {
         });
     });
 
-    // Render math expressions
+    // Render math
     renderMathInElement(document.body, {
         delimiters: [
             {left: "\\(", right: "\\)", display: false},
@@ -38,7 +38,7 @@ function initialize(texts, buttonLabels, symbolCopy, latexCopy) {
         ]
     });
 
-    // Handle toggle button clicks for showing content
+
     const toggleButtons = document.querySelectorAll('.toggle');
     toggleButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -46,7 +46,7 @@ function initialize(texts, buttonLabels, symbolCopy, latexCopy) {
         });
     });
 
-    // Handle toggle-style-button clicks for setting active style
+
     const toggleStyleButtons = document.querySelectorAll('.toggle-style-button');
     toggleStyleButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -55,7 +55,7 @@ function initialize(texts, buttonLabels, symbolCopy, latexCopy) {
         });
     });
 
-    // Trigger default content display
+
     const defaultTopic = document.querySelector('.toggle.active').getAttribute('data-topic');
     const defaultButton = document.querySelector('.toggle.active');
     showContent(defaultTopic, defaultButton, texts, buttonLabels);
@@ -81,19 +81,15 @@ function showContent(topic, element, texts, buttonLabels) {
 
     content.innerHTML = html;
 
-    // Render math expressions in the new content
     renderMathInElement(content, {
         delimiters: [
             {left: "\\(", right: "\\)", display: false},
             {left: "\\[", right: "\\]", display: true}
         ]
     });
-
-    // Remove 'active' class from all toggle buttons
     const toggleButtons = document.querySelectorAll('.toggle');
     toggleButtons.forEach(button => button.classList.remove('active'));
 
-    // Add 'active' class to the clicked toggle button
     element.classList.add('active');
 }
 
@@ -107,3 +103,14 @@ function showCopiedAnimation(element) {
         button.classList.remove('copied');
     }, 2000);
 }
+
+const githubIcon = document.createElement('img');
+githubIcon.src = 'assets/github-mark-white.svg';
+githubIcon.alt = 'GitHub';
+githubIcon.width = 20;
+githubIcon.height = 20;
+document.body.appendChild(githubIcon);
+
+const githubIconElement = document.createElement('div');
+githubIconElement.innerHTML = '<img src="assets/github-mark-white.svg" alt="GitHub" width="20" height="20" />';
+document.body.appendChild(githubIconElement);

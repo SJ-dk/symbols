@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
 
-/* Declare CSS variables at the top of the file */
 :root {
   --primary-color: #e0e0e0;
   --secondary-color: #1a1a2e;
@@ -89,9 +88,9 @@ html, body {
 }
 
 .header-text-box {
-  width: 800px;        /* or any fixed width you prefer */
-  margin: 0 auto;      /* centers the box if desired */
-  text-align: justify; /* to justify the text in a neat block */
+  width: 800px;
+  margin: 0 auto;
+  text-align: justify; 
 }
 
 .footer_container {
@@ -161,7 +160,7 @@ html, body {
 .copy-style-label {
   font-size: 1em;
   color: var(--primary-color);
-  margin-bottom: 5px; /* space between label and buttons */
+  margin-bottom: 5px;
 }
 
 .toggle-style-buttons {
@@ -309,7 +308,7 @@ html, body {
   font-family: 'Material Symbols Outlined';
   font-weight: normal;
   font-style: normal;
-  font-size: 1.1em; /* reduced from 1.5em */
+  font-size: 1.1em;
   vertical-align: middle;
   color: var(--primary-color);
 }
