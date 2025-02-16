@@ -1,0 +1,222 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  color: #e0e0e0;
+  justify-content: center;
+  align-items: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: normal normal normal 1rem/1.6 -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 1rem;
+}
+
+.background {
+  background-color: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  height: 15%;
+}
+.header h1 {
+  color: #e0e0e0;
+  font-size: 2.5em;
+  margin: 5px 2px;
+}
+.header p {
+  color: #e0e0e0;
+  font-size: 1em;
+  margin: 5px 2px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.textContainer h1 {
+  color: #e0e0e0;
+  font-size: 2em;
+  margin: 10px 2px;
+}
+
+nav .menuDir {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav .menuDir li {
+  margin: 50px;
+}
+
+nav .menuDir li a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 24px;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+
+nav .menuDir li a::before {
+  content: attr(data-item);
+  transition: 0.5s;
+  color: #06b39c;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+nav .menuDir li a:hover::before {
+  width: 100%;
+  transition: all 0.75s ease-in-out;
+}
+
+.Btn {
+  width: 100px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+}
+
+.Btn-text {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e0e0e0;
+  background-color: rgb(2, 153, 153);
+}
+
+.Btn-svgIcon {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e0e0e0;
+  background-color: teal;
+}
+
+.Btn:hover .Btn-text {
+  background-color: rgb(0, 133, 133);
+}
+
+.Btn:hover .Btn-svgIcon {
+  background-color: rgb(0, 105, 105);
+}
+
+.toggle-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Set the container to take up the full width */
+  max-width: 35em; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.toggle {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 20px;
+  font-weight: 400;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  background: none;
+}
+
+.toggle.active {
+  color: #04d9ae;
+  border-color: #00997a;
+}
+
+.toggle:hover {
+  color: #04d9ae;
+  border-color: #04d9ae;
+}
+
+.toggle-style-button.active {
+  background-color: #04d9ae;
+  color: #fff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(96px, auto)); /* Ensure max 5 items per row with min width */
+  row-gap: 1.5rem;
+  column-gap: 1.5rem;
+  padding: 20px;
+  justify-content: center;
+}
+
+.grid-item {
+  background-color: #333;
+  border: 2px solid #ffffff00;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 96px; /* Set minimum width */
+  min-height: 96px; /* Set minimum height */
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  border: 2px solid;
+  border-color: #00997a;
+}
+
+.grid-item .text {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.grid-item .Btn {
+  width: 100%;
+  max-height: 36px; /* Allow up to two lines of text */
+  background-color: #00997a;
+  margin-top: auto;
+  justify-content: center;
+  color: #e0e0e0;
+  font-size: 12px;
+  white-space: normal; /* Allow text to wrap */
+  word-break: break-word; /* Ensure long words break correctly */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+}

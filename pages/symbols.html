@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"></script>
+  <script src="../js/script.js"></script>
+  <title>KaTeX Example</title>
+</head>
+<body class="background">
+  <div class="header">
+    <h1>Matematik Symboler</h1>
+    <p>Samling af symboler der gør det nemmere at copy paste. Hvis jeg har gjort det rigtigt, kræver det bare at clicke for at kopiere.<br>
+    Hvis du føler jeg mangler noget, så tag fat i mig før eller efter undervisning.</p>
+  </div>
+  <div class="toggle-style">
+    <button class="toggle-style-button" data-style="inline">Copy Symbol</button>
+    <button class="toggle-style-button" data-style="inline">Copy Latex</button>
+  </div>
+    <div class="toggle-container">
+      <button class="toggle" data-topic="logic">Logic</button>
+      <button class="toggle" data-topic="sets">Sets</button>
+      <button class="toggle" data-topic="greek">Greek Alphabet</button>
+      <button class="toggle" data-topic="functions">Functions</button>
+      <button class="toggle" data-topic="relations">Relations</button>
+      <button class="toggle" data-topic="negation">Negation</button>
+      <button class="toggle" data-topic="misc">Misc</button>
+      <button class="toggle" data-topic="examples">Examples</button>
+    </div>
+    <div id="content">
+      <p>Select a topic from the menu to see more information.</p>
+    </div>
+</body>
+</html>
