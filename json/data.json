@@ -73,7 +73,7 @@
     },
     "buttonLabels": {
       "logic": [
-        "Empty", "Neg", "AND", "NOT AND", "OR", "NOT OR", "Exclusive Or", "Exclusive NOT OR", 
+        "Empty", "Negation", "AND", "NOT AND", "OR", "NOT OR", "Exclusive Or", "Exclusive NOT OR", 
         "Equivalent", "Non-equivalent", "Implies", "Non-implication", "Converse", "Non-converse", "Always True", "Always False"
       ],
       "sets": [

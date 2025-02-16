@@ -11,22 +11,23 @@ document.addEventListener('DOMContentLoaded', () => {
 function initialize(texts, buttonLabels, symbolCopy, latexCopy) {
     // Handle grid item clicks for copying text
     document.addEventListener('click', (event) => {
-        if (event.target.classList.contains('grid-item')) {
-            const activeStyle = document.querySelector('.toggle-style-button.active').getAttribute('data-style');
-            const topic = event.target.closest('.grid-container').getAttribute('data-topic');
-            const index = Array.from(event.target.parentNode.children).indexOf(event.target);
-            let textToCopy;
-            if (activeStyle === 'inline') {
-                textToCopy = symbolCopy[topic][index];
-            } else {
-                textToCopy = latexCopy[topic][index].replace(/\\\\/g, '\\');
-            }
-            navigator.clipboard.writeText(textToCopy).then(() => {
-                showCopiedAnimation(event.target);
-            }).catch(err => {
-                console.error('Failed to copy text: ', err);
-            });
+        const gridItem = event.target.closest('.grid-item');
+        if (!gridItem) return; // click was not inside a grid-item
+
+        const activeStyle = document.querySelector('.toggle-style-button.active').getAttribute('data-style');
+        const topic = gridItem.closest('.grid-container').getAttribute('data-topic');
+        const index = Array.from(gridItem.parentNode.children).indexOf(gridItem);
+        let textToCopy;
+        if (activeStyle === 'inline') {
+            textToCopy = symbolCopy[topic][index];
+        } else {
+            textToCopy = latexCopy[topic][index].replace(/\\\\/g, '\\');
         }
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            showCopiedAnimation(gridItem);
+        }).catch(err => {
+            console.error('Failed to copy text: ', err);
+        });
     });
 
     // Render math expressions
@@ -98,11 +99,11 @@ function showContent(topic, element, texts, buttonLabels) {
 
 function showCopiedAnimation(element) {
     const button = element.querySelector('.Btn');
-    const originalText = button.textContent;
-    button.textContent = 'Copied';
+    const originalHTML = button.innerHTML;
+    button.innerHTML = 'Copied <span class="copied-check">check</span>';
     button.classList.add('copied');
     setTimeout(() => {
-        button.textContent = originalText;
+        button.innerHTML = originalHTML;
         button.classList.remove('copied');
     }, 2000);
 }

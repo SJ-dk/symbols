@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+
+/* Declare CSS variables at the top of the file */
+:root {
+  --primary-color: #e0e0e0;
+  --secondary-color: #1a1a2e;
+  --gradient-start: #243B55;
+  --gradient-end: #141E30;
+  --highlight-color: #e94560;
+  --button-bg-color: transparent;
+  --button-hover-bg-color: #e94560;
+  --button-copied-text-color: #e0e0e0;
+  --toggle-bg-color: #1a1a2e;
+  --toggle-active-bg-color: #e94560;
+  --toggle-active-text-color: #e0e0e0;
+  --toggle-hover-border-color: #e94560;
+  --text-color: #e0e0e0;
+  --footer-sign-font-size: 2.5em;
+  --button-active-border-color: #e0e0e0;
+}
+
 .italianno-regular {
   font-family: "Italianno", serif;
   font-weight: 400;
@@ -7,195 +29,230 @@
 html, body {
   height: 100%;
   margin: 0;
-  color: #e0e0e0;
-  justify-content: center;
-  align-items: center;
+  padding: 0;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font: normal normal normal 1rem/1.6 -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: 'Noto Sans', 'Noto Sans Math', sans-serif;
   font-size: 1rem;
+  line-height: 1.6;
 }
 
 .background {
-  background-color: #141E30;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: var(--secondary-color);
+  background: linear-gradient(to top, var(--gradient-start), var(--gradient-end));
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh; /* Ensure the background takes up at least the full viewport height */
+  background-attachment: fixed;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%; 
+  height: 100%;
 }
 
 .header {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
-  height: 15%;
+  background-color: var(--secondary-color);
+  z-index: 1000;
+  border-bottom: 1px solid var(--primary-color);
+  padding: 12px;
+  margin-bottom: 25px;
 }
 .header h1 {
-  color: #e0e0e0;
+  color: var(--primary-color);
   font-size: 2.5em;
   margin: 5px 2px;
 }
 .header p {
-  color: #e0e0e0;
+  color: var(--primary-color);
+  font-size: 1.1em;
+  margin: 0px 2px;
+  font-family: 'Noto Sans Math', sans-serif;
+  font-weight: 500;
+  text-align: justify;
+  text-align-last: justify; /* justifies the last line too */
+}
+
+.header p::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.header-text-box {
+  width: 800px;        /* or any fixed width you prefer */
+  margin: 0 auto;      /* centers the box if desired */
+  text-align: justify; /* to justify the text in a neat block */
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  width: 100%; 
+  z-index: 8000;
+  border-top: 1px solid var(--primary-color);
+  padding: 10px;
+}
+
+.footerLink a {
+  text-decoration: none;
+  color: var(--text-color);
   font-size: 1em;
   margin: 5px 2px;
-}
-
-.textContainer {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  height: 100%;
-}
-
-.textContainer h1 {
-  color: #e0e0e0;
-  font-size: 2em;
-  margin: 10px 2px;
-}
-
-nav .menuDir {
-  list-style: none;
-  display: flex;
   justify-content: center;
 }
 
-nav .menuDir li {
-  margin: 50px;
+.footerLink a img {
+  margin-right: 5px;
 }
 
-nav .menuDir li a {
-  text-decoration: none;
-  color: #e0e0e0;
-  font-size: 24px;
+.footer-sign {
+  color: var(--text-color);
+  font-family: 'Italianno', cursive;
   font-weight: 400;
-  transition: all 0.5s ease-in-out;
+  font-style: normal;
+  text-align: center;
+  margin-top: 10px;
+  font-size: var(--footer-sign-font-size);
+}
+
+.toggle-section {
   position: relative;
-  text-transform: uppercase;
-}
-
-nav .menuDir li a::before {
-  content: attr(data-item);
-  transition: 0.5s;
-  color: #06b39c;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 0;
-  overflow: hidden;
-}
-
-nav .menuDir li a:hover::before {
   width: 100%;
-  transition: all 0.75s ease-in-out;
+  margin-bottom: 20px;
 }
 
-.Btn {
-  width: 100px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  border: none;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.164);
-  cursor: pointer;
-}
-
-.Btn-text {
-  width: 65%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #e0e0e0;
-  background-color: rgb(2, 153, 153);
-}
-
-.Btn-svgIcon {
-  width: 35%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #e0e0e0;
-  background-color: teal;
-}
-
-.Btn:hover .Btn-text {
-  background-color: rgb(0, 133, 133);
-}
-
-.Btn:hover .Btn-svgIcon {
-  background-color: rgb(0, 105, 105);
-}
 
 .toggle-container {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Set the container to take up the full width */
-  max-width: 35em; /* Set a maximum width for the container */
-  margin: 0 auto; /* Center the container */
+  max-width: 35em;
+  margin: 0 auto;
+  position: relative;
+}
+
+.toggle-style {
+  position: absolute;
+  top: 0;
+  /* 35em is the max-width of toggle-container; offset half its width plus a gap (here 20px): */
+  left: calc(50% + 17.5em + 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.copy-style-label {
+  font-size: 1em;
+  color: var(--primary-color);
+  margin-bottom: 5px; /* space between label and buttons */
+}
+
+.toggle-style-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 0;
 }
 
 .toggle {
   text-decoration: none;
-  color: #e0e0e0;
+  color: var(--primary-color);
   font-size: 20px;
   font-weight: 400;
-  border: 2px solid #e0e0e0;
+  border: 2px solid var(--primary-color);
   border-radius: 12px;
   position: relative;
   display: inline-block;
   margin: 5px;
   cursor: pointer;
   background: none;
+  width: 125px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .toggle.active {
-  color: #04d9ae;
-  border-color: #00997a;
+  color: var(--primary-color);
+  border-color: var(--highlight-color);
 }
 
 .toggle:hover {
-  color: #04d9ae;
-  border-color: #04d9ae;
+  color: var(--highlight-color);
+  border-color: var(--toggle-hover-border-color);
+}
+
+.toggle-style-button {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--toggle-active-text-color);
+  margin: 0 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.toggle-style-button:hover {
+  opacity: 75%;
+}
+
+.toggle-style-button::after {
+  content: "check";
+  font-family: 'Material Symbols Outlined';
+  font-size: 1.1em;
+  margin-left: 5px;
+  vertical-align: middle;
+  visibility: hidden;
 }
 
 .toggle-style-button.active {
-  background-color: #04d9ae;
-  color: #fff;
+  background-color: transparent;
+  border: 1px solid var(--highlight-color);
+  color: var(--toggle-active-text-color);
+  opacity: 100%;
+  vertical-align: middle;
+}
+
+.toggle-style-button.active::after {
+  visibility: visible;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(5, minmax(96px, auto)); /* Ensure max 5 items per row with min width */
-  row-gap: 1.5rem;
-  column-gap: 1.5rem;
-  padding: 20px;
+  grid-template-columns: repeat(6, 125px);
+  grid-template-rows: repeat(6, 125px);
+  row-gap: 20px;
+  column-gap: 20px;
   justify-content: center;
 }
 
 .grid-item {
-  background-color: #333;
+  background-color: var(--toggle-bg-color);
   border: 2px solid #ffffff00;
-  color: #e0e0e0;
+  color: var(--primary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 96px; /* Set minimum width */
-  min-height: 96px; /* Set minimum height */
+  width: 125px;
+  height: 125px;
   transition: transform 0.3s ease-in-out;
   text-align: center;
   cursor: pointer;
@@ -203,10 +260,18 @@ nav .menuDir li a:hover::before {
 
 .grid-item:hover {
   border: 2px solid;
-  border-color: #00997a;
+  border-color: var(--toggle-hover-border-color);
+}
+
+.grid-item:hover .Btn {
+  border-color: var(--toggle-hover-border-color);
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
 }
 
 .grid-item .text {
+  font-family: Noto Sans Math;
   flex-grow: 1;
   display: flex;
   align-items: center;
@@ -216,39 +281,37 @@ nav .menuDir li a:hover::before {
 
 .grid-item .Btn {
   width: 100%;
-  max-height: 36px; /* Allow up to two lines of text */
-  background-color: #00997a;
+  height: 36px;
+  background-color: var(--button-bg-color);
+  border: 2px solid var(--primary-color);
   margin-top: auto;
   justify-content: center;
-  color: #e0e0e0;
+  color: var(--primary-color);
   font-size: 12px;
-  white-space: normal; /* Allow text to wrap */
-  word-break: break-word; /* Ensure long words break correctly */
+  font-weight: 600;
+  white-space: normal;
+  word-break: break-word;
   display: flex;
   align-items: center;
   text-align: center;
-  text-transform: capitalize;
 }
 
 .grid-item .Btn.copied {
-  background-color: #04d9ae63;
-  color: #1dce6d;
+  background-color: var(--button-hover-bg-color);
+  color: var(--button-copied-text-color);
+  border-color: var(--toggle-hover-border-color);
   transition: background-color 0.2s ease-out, color 0.5s ease-out;
 }
 
-.footerLink a {
-  text-decoration: none;
-  color: #e0e0e0;
-  font-size: 1em;
-  margin: 5px 2px;
+.grid-item .Btn .copied-check {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.1em; /* reduced from 1.5em */
+  vertical-align: middle;
+  color: var(--primary-color);
 }
 
-.footer-sign {
-  color: #e0e0e0;
-  font-family: 'Italianno', cursive;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-  margin-top: 10px;
-  font-size: 2.0em;
-}
+.grid-item .Btn
