@@ -3,18 +3,26 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('../json/data.json')
         .then(response => response.json())
         .then(data => {
-            initialize(data.texts, data.buttonLabels);
+            initialize(data.texts, data.buttonLabels, data.symbolCopy, data.latexCopy);
         })
         .catch(error => console.error('Error loading data:', error));
 });
 
-function initialize(texts, buttonLabels) {
+function initialize(texts, buttonLabels, symbolCopy, latexCopy) {
     // Handle grid item clicks for copying text
     document.addEventListener('click', (event) => {
         if (event.target.classList.contains('grid-item')) {
-            const text = event.target.querySelector('.text').textContent;
-            navigator.clipboard.writeText(text).then(() => {
-                alert(`Copied: ${text}`);
+            const activeStyle = document.querySelector('.toggle-style-button.active').getAttribute('data-style');
+            const topic = event.target.closest('.grid-container').getAttribute('data-topic');
+            const index = Array.from(event.target.parentNode.children).indexOf(event.target);
+            let textToCopy;
+            if (activeStyle === 'inline') {
+                textToCopy = symbolCopy[topic][index];
+            } else {
+                textToCopy = latexCopy[topic][index].replace(/\\\\/g, '\\');
+            }
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                showCopiedAnimation(event.target);
             }).catch(err => {
                 console.error('Failed to copy text: ', err);
             });
@@ -46,19 +54,10 @@ function initialize(texts, buttonLabels) {
         });
     });
 
-    // Handle toggle button clicks for copying content
-    document.addEventListener('click', (event) => {
-        if (event.target.classList.contains('toggle')) {
-            const topic = event.target.getAttribute('data-topic');
-            const activeStyle = document.querySelector('.toggle-style-button.active').getAttribute('data-style');
-            const contentToCopy = activeStyle === 'inline' ? texts[topic].join(' ') : buttonLabels[topic].join(' ');
-            navigator.clipboard.writeText(contentToCopy).then(() => {
-                alert(`Copied: ${contentToCopy}`);
-            }).catch(err => {
-                console.error('Failed to copy text: ', err);
-            });
-        }
-    });
+    // Trigger default content display
+    const defaultTopic = document.querySelector('.toggle.active').getAttribute('data-topic');
+    const defaultButton = document.querySelector('.toggle.active');
+    showContent(defaultTopic, defaultButton, texts, buttonLabels);
 }
 
 function showContent(topic, element, texts, buttonLabels) {
@@ -67,7 +66,7 @@ function showContent(topic, element, texts, buttonLabels) {
 
     if (texts[topic]) {
         html = `
-            <div class="grid-container">
+            <div class="grid-container" data-topic="${topic}">
                 ${texts[topic].map((text, index) => `
                     <div class="grid-item" title="Click to copy">
                         <div class="text">${text}</div>
@@ -95,4 +94,15 @@ function showContent(topic, element, texts, buttonLabels) {
 
     // Add 'active' class to the clicked toggle button
     element.classList.add('active');
+}
+
+function showCopiedAnimation(element) {
+    const button = element.querySelector('.Btn');
+    const originalText = button.textContent;
+    button.textContent = 'Copied';
+    button.classList.add('copied');
+    setTimeout(() => {
+        button.textContent = originalText;
+        button.classList.remove('copied');
+    }, 2000);
 }

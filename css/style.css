@@ -1,3 +1,9 @@
+.italianno-regular {
+  font-family: "Italianno", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -16,6 +22,9 @@ html, body {
   background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 100vh; /* Ensure the background takes up at least the full viewport height */
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -219,4 +228,27 @@ nav .menuDir li a:hover::before {
   align-items: center;
   text-align: center;
   text-transform: capitalize;
+}
+
+.grid-item .Btn.copied {
+  background-color: #04d9ae63;
+  color: #1dce6d;
+  transition: background-color 0.2s ease-out, color 0.5s ease-out;
+}
+
+.footerLink a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 1em;
+  margin: 5px 2px;
+}
+
+.footer-sign {
+  color: #e0e0e0;
+  font-family: 'Italianno', cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 2.0em;
 }

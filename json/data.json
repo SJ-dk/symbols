@@ -4,7 +4,7 @@
         "\\(\\emptyset\\)", "\\(\\neg\\)", "\\(\\land\\)", "\\(\\uparrow\\)", 
         "\\(\\lor\\)", "\\(\\downarrow\\)", "\\(\\oplus\\)", "\\(\\odot\\)", 
         "\\(\\leftrightarrow\\)", "\\(\\nleftrightarrow\\)", "\\(\\rightarrow\\)", 
-        "\\(\\nrightarrow\\)", "\\(\\leftarrow\\)", "\\(\\nleftarrow\\)"
+        "\\(\\nrightarrow\\)", "\\(\\leftarrow\\)", "\\(\\nleftarrow\\)", "\\(\\top\\)", "\\(\\bot\\)"
       ],
       "sets": [
         "\\(\\mathbb{C}\\)", "\\(\\mathbb{N}\\)", "\\(\\mathbb{Q}\\)", "\\(\\mathbb{R}\\)", 
@@ -22,7 +22,7 @@
         "\\(\\Phi\\)", "\\(\\Chi\\)", "\\(\\Psi\\)", "\\(\\Omega\\)"
       ],
       "functions": [
-        "\\(\\sum\\)", "\\(\\prod\\)", "\\(\\int\\)", "\\(\\oint\\)", 
+        "\\(\\sum\\)", "\\(\\prod\\)", "\\(\\int\\)", "\\(\\oint\\)", "\\(\\circ\\)",
         "\\(\\partial\\)", "\\(\\nabla\\)", "\\(\\Delta\\)", "\\(\\infty\\)", 
         "\\(\\lim\\)", "\\(\\frac{d}{dx}\\)", "\\(\\frac{\\partial}{\\partial x}\\)", 
         "\\(\\frac{\\Delta y}{\\Delta x}\\)", "\\(\\frac{dy}{dx}\\)", 
@@ -74,7 +74,7 @@
     "buttonLabels": {
       "logic": [
         "Empty", "Neg", "AND", "NOT AND", "OR", "NOT OR", "Exclusive Or", "Exclusive NOT OR", 
-        "Equivalent", "Non-equivalent", "Implies", "Non-implication", "Converse", "Non-converse"
+        "Equivalent", "Non-equivalent", "Implies", "Non-implication", "Converse", "Non-converse", "Always True", "Always False"
       ],
       "sets": [
         "Complex Numbers", "Natural Numbers", "Rational Numbers", "Real Numbers", 
@@ -89,7 +89,7 @@
         "Rho", "Sigma", "Tau", "Upsilon", "Phi", "Chi", "Psi", "Omega"
       ],
       "functions": [
-        "Summation", "Product", "Integral", "Contour Integral", "Partial Derivative", 
+        "Summation", "Product", "Integral", "Contour Integral", "Function composition", "Partial Derivative", 
         "Nabla", "Delta", "Infinity", "Limit", "Derivative", "Partial Derivative", 
         "Difference Quotient", "Second Derivative", "Second Partial Derivative", 
         "Mixed Partial Derivative", "Definite Integral", "Infinite Sum", 
@@ -127,7 +127,7 @@
     "latexCopy": {
       "logic": [
         "\\\\empty", "\\\\neg", "\\\\land", "\\\\uparrow\\", "\\\\lor", "\\\\downarrow", "\\\\oplus", "\\\\odot", 
-        "\\\\leftrightarrow", "\\\\nleftrightarrow", "\\\\rightarrow", "\\\\nrightarrow", "\\\\leftarrow", "\\\\nleftarrow"
+        "\\\\leftrightarrow", "\\\\nleftrightarrow", "\\\\rightarrow", "\\\\nrightarrow", "\\\\leftarrow", "\\\\nleftarrow", "\\\\top", "\\\\bot"
     ],
       "sets": [
         "\\\\mathbb{C}", "\\\\mathbb{N}", "\\\\mathbb{Q}", "\\\\mathbb{R}", 
@@ -145,7 +145,7 @@
         "\\\\Phi", "\\\\Chi", "\\\\Psi", "\\\\Omega"
         ],
       "functions": [
-        "\\\\sum", "\\\\prod", "\\\\int", "\\\\oint", 
+        "\\\\sum", "\\\\prod", "\\\\int", "\\\\oint", "\\\\circ",
         "\\\\partial", "\\\\nabla", "\\\\Delta", "\\\\infty", 
         "\\\\lim", "\\\\frac{d}{dx}", "\\\\frac{\\\\partial}{\\\\partial x}", 
         "\\\\frac{\\\\Delta y}{\\\\Delta x}", "\\\\frac{dy}{dx}", 
@@ -197,7 +197,7 @@
         "symbolCopy": {
           "logic": [
             "∅", "¬", "∧", "↑", "∨", "↓", "⊕", "⊙", 
-            "↔", "↮", "→", "↛", "←", "↚"
+            "↔", "↮", "→", "↛", "←", "↚", "⊤", "⊥"
           ],
           "sets": [
             "ℂ", "ℕ", "ℚ", "ℝ", 
@@ -215,7 +215,7 @@
             "Φ", "Χ", "Ψ", "Ω"
           ],
           "functions": [
-            "∑", "∏", "∫", "∮", 
+            "∑", "∏", "∫", "∮", "∘",
             "∂", "∇", "Δ", "∞", 
             "lim", "d/dx", "∂/∂x", 
             "Δy/Δx", "dy/dx", 

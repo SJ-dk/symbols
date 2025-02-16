@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
   <link rel="stylesheet" href="../css/style.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
@@ -17,21 +20,27 @@
     Hvis du føler jeg mangler noget, så tag fat i mig før eller efter undervisning.</p>
   </div>
   <div class="toggle-style">
-    <button class="toggle-style-button" data-style="inline">Symbol</button>
-    <button class="toggle-style-button" data-style="inline">Latex</button>
+    <button class="toggle-style-button active" data-style="inline">Symbol</button>
+    <button class="toggle-style-button" data-style="latex">Latex</button>
   </div>
-    <div class="toggle-container">
-      <button class="toggle" data-topic="logic">Logic</button>
-      <button class="toggle" data-topic="sets">Sets</button>
-      <button class="toggle" data-topic="greek">Greek Alphabet</button>
-      <button class="toggle" data-topic="functions">Functions</button>
-      <button class="toggle" data-topic="relations">Relations</button>
-      <button class="toggle" data-topic="negation">Negation</button>
-      <button class="toggle" data-topic="misc">Misc</button>
-      <button class="toggle" data-topic="examples">Examples</button>
+  <div class="toggle-container">
+    <button class="toggle active" data-topic="logic">Logic</button>
+    <button class="toggle" data-topic="sets">Sets</button>
+    <button class="toggle" data-topic="greek">Greek Alphabet</button>
+    <button class="toggle" data-topic="functions">Functions</button>
+    <button class="toggle" data-topic="relations">Relations</button>
+    <button class="toggle" data-topic="negation">Negation</button>
+    <button class="toggle" data-topic="misc">Misc</button>
+    <button class="toggle" data-topic="examples">Examples</button>
+  </div>
+  <div id="content">
+    <p>Something went wrong. Please select a box</p>
+  </div>
+  <div class="footer container">
+    <div class="footerLink">
+      <a href="https://github.com/SJ-dk/symbols" target="_blank">GitHub</a>
     </div>
-    <div id="content">
-      <p>Select a topic from the menu to see more information.</p>
-    </div>
+    <p class="footer-sign">Silas Jensen</p>
+  </div>
 </body>
 </html>
