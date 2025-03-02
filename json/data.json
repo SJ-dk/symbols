@@ -1,129 +1,129 @@
 {
-    "texts": {
-      "logic": [
-        "\\(\\emptyset\\)", "\\(\\neg\\)", "\\(\\land\\)", "\\(\\uparrow\\)", 
-        "\\(\\lor\\)", "\\(\\downarrow\\)", "\\(\\oplus\\)", "\\(\\odot\\)", 
-        "\\(\\leftrightarrow\\)", "\\(\\nleftrightarrow\\)", "\\(\\rightarrow\\)", 
-        "\\(\\nrightarrow\\)", "\\(\\leftarrow\\)", "\\(\\nleftarrow\\)", "\\(\\top\\)", "\\(\\bot\\)"
-      ],
-      "sets": [
-        "\\(\\mathbb{C}\\)", "\\(\\mathbb{N}\\)", "\\(\\mathbb{Q}\\)", "\\(\\mathbb{R}\\)", 
-        "\\(\\mathbb{Z}\\)", "\\(\\forall\\)", "\\(\\exists\\)", "\\(\\nexists\\)", 
-        "\\(\\empty\\)", "\\(\\in\\)", "\\(\\notin\\)", "\\(\\ni\\)", "\\(\\notni\\)", 
-        "\\(\\cap\\)", "\\(\\cup\\)", "\\(\\subset\\)", "\\(\\supset\\)", 
-        "\\(\\subseteq\\)", "\\(\\supseteq\\)"
-      ],
-      "greek": [
-        "\\(\\Alpha\\)", "\\(\\Beta\\)", "\\(\\Gamma\\)", "\\(\\Delta\\)", 
-        "\\(\\Epsilon\\)", "\\(\\Zeta\\)", "\\(\\Eta\\)", "\\(\\Theta\\)", 
-        "\\(\\Iota\\)", "\\(\\Kappa\\)", "\\(\\Lambda\\)", "\\(\\Mu\\)", 
-        "\\(\\Nu\\)", "\\(\\Xi\\)", "\\(\\Omicron\\)", "\\(\\Pi\\)", 
-        "\\(\\Rho\\)", "\\(\\Sigma\\)", "\\(\\Tau\\)", "\\(\\Upsilon\\)", 
-        "\\(\\Phi\\)", "\\(\\Chi\\)", "\\(\\Psi\\)", "\\(\\Omega\\)"
-      ],
-      "functions": [
-        "\\(\\sum\\)", "\\(\\prod\\)", "\\(\\int\\)", "\\(\\oint\\)", "\\(\\circ\\)",
-        "\\(\\partial\\)", "\\(\\nabla\\)", "\\(\\Delta\\)", "\\(\\infty\\)", 
-        "\\(\\lim\\)", "\\(\\frac{d}{dx}\\)", "\\(\\frac{\\partial}{\\partial x}\\)", 
-        "\\(\\frac{\\Delta y}{\\Delta x}\\)", "\\(\\frac{dy}{dx}\\)", 
-        "\\(\\frac{d^2y}{dx^2}\\)", "\\(\\frac{\\partial^2}{\\partial x^2}\\)", 
-        "\\(\\frac{\\partial^2 f}{\\partial x \\partial y}\\)", "\\(\\int_{a}^{b}\\)", 
-        "\\(\\sum_{n=1}^{\\infty}\\)", "\\(\\prod_{n=1}^{\\infty}\\)", 
-        "\\(\\lim_{x \\to \\infty}\\)", "\\(\\lfloor x \\rfloor\\)", 
-        "\\(\\lceil x \\rceil\\)"
-      ],
-      "relations": [
-        "\\(\\neg\\)", "\\(\\exists\\)", "\\(\\ni\\)", "\\(\\mid\\)", 
-        "\\(\\parallel\\)", "\\(\\sim\\)", "\\(\\approx\\)", "\\(=\\)", 
-        "\\(\\leq\\)", "\\(\\geq\\)", "\\(<\\)", "\\(>\\)", 
-        "\\(\\prec\\)", "\\(\\succ\\)", "\\(\\subseteq\\)", "\\(\\supseteq\\)", 
-        "\\(\\vdash\\)", "\\(\\Vdash\\)", 
-        "\\(\\triangleleft\\)", "\\(\\triangleright\\)", "\\(\\trianglelefteq\\)", 
-        "\\(\\trianglerighteq\\)", "\\(\\subseteqq\\)", "\\(\\supseteqq\\)", 
-        "\\(\\preceq\\)", "\\(\\succeq\\)", "\\(\\cong\\)", "\\(\\equiv\\)", 
-        "\\(\\approx\\)", "\\(\\asymp\\)"
-      ],
-      "negation": [
-        "\\(\\neg\\)", "\\(\\nexists\\)", "\\(\\notni\\)", "\\(\\nmid\\)", 
-        "\\(\\nparallel\\)", "\\(\\nsim\\)", "\\(\\not\\approx\\)", "\\(\\neq\\)", 
-        "\\(\\nleq\\)", "\\(\\ngeq\\)", "\\(\\nless\\)", "\\(\\ngtr\\)", 
-        "\\(\\nprec\\)", "\\(\\nsucc\\)", "\\(\\nsubseteq\\)", "\\(\\nsupseteq\\)", 
-        "\\(\\nvdash\\)", "\\(\\nVdash\\)", 
-        "\\(\\ntriangleleft\\)", "\\(\\ntriangleright\\)", "\\(\\ntrianglelefteq\\)", 
-        "\\(\\ntrianglerighteq\\)", "\\(\\nsubseteqq\\)", "\\(\\nsupseteqq\\)", 
-        "\\(\\npreceq\\)", "\\(\\nsucceq\\)", "\\(\\ncong\\)", "\\(\\not\\equiv\\)", 
-        "\\(\\not\\approx\\)", "\\(\\not\\asymp\\)"
-      ],
-      "misc": [
-        "\\(\\overline{a + b}\\)", "\\(\\frac{1}{2}\\)", "\\(\\tfrac{1}{2}\\)", 
-        "\\(\\dfrac{1}{2}\\)", "\\(\\cfrac{a}{1 + \\cfrac{1}{b}}\\)", 
-        "\\(\\sqrt{x}\\)", "\\(\\sqrt[3]{x}\\)"
-      ],
-      "examples": [
-        "\\(\\neg \\exists y (Q(y) \\land \\forall x \\neg R(x, y)) \\)", 
-        "\\(\\displaystyle\\sum_{i=1}^n\\)", 
-        "\\(\\underbrace{a+b+c}_{\\text{note}}\\)", 
-        "\\(\\cancel{5}\\)", "\\(\\sout{abc}\\)", 
-        "\\(\\boxed{\\pi=\\frac{c}{d}}\\)", 
-        "\\(\\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix}\\)", 
-        "\\(\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}\\)", 
-        "\\(\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}\\)", 
-        "\\(\\displaystyle\\sum_{\\substack{i \\in \\Lambda \\\\ 0 < j < n}}\\)"
-      ]
-    },
-    "buttonLabels": {
-      "logic": [
-        "Empty", "Negation", "AND", "NOT AND", "OR", "NOT OR", "Exclusive Or", "Exclusive NOT OR", 
-        "Equivalent", "Non-equivalent", "Implies", "Non-implication", "Converse", "Non-converse", "Always True", "Always False"
-      ],
-      "sets": [
-        "Complex Numbers", "Natural Numbers", "Rational Numbers", "Real Numbers", 
-        "Integers", "For All", "There Exists", "There Does Not Exist", 
-        "Empty Set", "Element Of", "Not Element Of", "Contains As Member", 
-        "Does Not Contain As Member", "Intersection", "Union", 
-        "Subset", "Superset", "Subset or Equal", "Superset Or Equal"
-      ],
-      "greek": [
-        "Alpha", "Beta", "Gamma", "Delta", "Epsilon", "Zeta", "Eta", "Theta", 
-        "Iota", "Kappa", "Lambda", "Mu", "Nu", "Xi", "Omicron", "Pi", 
-        "Rho", "Sigma", "Tau", "Upsilon", "Phi", "Chi", "Psi", "Omega"
-      ],
-      "functions": [
-        "Summation", "Product", "Integral", "Contour Integral", "Function composition", "Partial Derivative", 
-        "Nabla", "Delta", "Infinity", "Limit", "Derivative", "Partial Derivative", 
-        "Difference Quotient", "Second Derivative", "Second Partial Derivative", 
-        "Mixed Partial Derivative", "Definite Integral", "Infinite Sum", 
-        "Infinite Product", "Limit at Infinity", "Floor", "Ceiling"
-      ],
-      "misc": [
-        "Overline", "Fraction 1", "Fraction 2", "Fraction 3", "Fraction 4", 
-        "Square Root", "Cube Root"
-      ],
-      "relations": [
-        "Negation", "Exists", "Contains As Member", "Divides", "Parallel", "Similar", 
-        "Approx", "Equal", "Less Than Or Equal", "Greater Than Or Equal", 
-        "Less Than", "Greater Than", "Precedes", "Succeeds", "Subset Of", 
-        "Superset Of", "Syntactically Entails(Proves)", "Semantically Entails",
-        "Triangle Left", "Triangle Right", "Triangle Left Equal",  
-        "Triangle Right Equal", "Subset Of", "Superset Of", "Precedes", "Succeeds",  
-        "Congruent", "Equivalent", "Approx", "Asymptotic"
-      ],
-      "negation": [
-        "Negation", "Not Exists", "Does Not Contain as Member", "Not Divides", 
-        "Not Parallel", "Not Similar", "Not Approx", "Not Equal", 
-        "Not Less Than Or Equal", "Not Greater Than Or Equal", 
-        "Not Less Than", "Not Greater Than", "Not Precedes", 
-        "Not Succeeds", "Not Subset Of", "Not Superset Of", "Does Not Syntactically Entail", "Does Not Semantically Entail",
-        "Not Triangle Left", "Not Triangle Right", "Not Triangle Left Equal",
-        "Not Triangle Right Equal", "Not Subset Of", "Not Superset Of",
-        "Not Precedes", "Not Succeeds", "Not Congruent", "Not Equivalent",
-        "Not Approx", "Not Asymptotic"
-      ],
-      "examples": [
-        "Set Example", "Sum", "Underbrace", "Cancel", "Strikeout", 
-        "Boxed", "V Matrix", "B Matrix", "P Matrix", "Sum with Subarray"
-      ]
-    },
+  "texts": {
+    "logic": [
+      "\\(\\emptyset\\)", "\\(\\neg\\)", "\\(\\land\\)", "\\(\\uparrow\\)", 
+      "\\(\\lor\\)", "\\(\\downarrow\\)", "\\(\\oplus\\)", "\\(\\odot\\)", 
+      "\\(\\leftrightarrow\\)", "\\(\\nleftrightarrow\\)", "\\(\\rightarrow\\)", 
+      "\\(\\nrightarrow\\)", "\\(\\leftarrow\\)", "\\(\\nleftarrow\\)", "\\(\\top\\)", "\\(\\bot\\)"
+    ],
+    "sets": [
+      "\\(\\mathbb{C}\\)", "\\(\\mathbb{N}\\)", "\\(\\mathbb{Q}\\)", "\\(\\mathbb{R}\\)", 
+      "\\(\\mathbb{Z}\\)", "\\(\\forall\\)", "\\(\\exists\\)", "\\(\\nexists\\)", 
+      "\\(\\empty\\)", "\\(\\in\\)", "\\(\\notin\\)", "\\(\\ni\\)", "\\(\\notni\\)", 
+      "\\(\\cap\\)", "\\(\\cup\\)", "\\(\\subset\\)", "\\(\\supset\\)", 
+      "\\(\\subseteq\\)", "\\(\\supseteq\\)"
+    ],
+    "greek": [
+      "\\(\\Alpha\\)", "\\(\\Beta\\)", "\\(\\Gamma\\)", "\\(\\Delta\\)", 
+      "\\(\\Epsilon\\)", "\\(\\Zeta\\)", "\\(\\Eta\\)", "\\(\\Theta\\)", 
+      "\\(\\Iota\\)", "\\(\\Kappa\\)", "\\(\\Lambda\\)", "\\(\\Mu\\)", 
+      "\\(\\Nu\\)", "\\(\\Xi\\)", "\\(\\Omicron\\)", "\\(\\Pi\\)", 
+      "\\(\\Rho\\)", "\\(\\Sigma\\)", "\\(\\Tau\\)", "\\(\\Upsilon\\)", 
+      "\\(\\Phi\\)", "\\(\\Chi\\)", "\\(\\Psi\\)", "\\(\\Omega\\)"
+    ],
+    "functions": [
+      "\\(\\sum\\)", "\\(\\prod\\)", "\\(\\int\\)", "\\(\\oint\\)", "\\(\\circ\\)",
+      "\\(\\partial\\)", "\\(\\nabla\\)", "\\(\\Delta\\)", "\\(\\infty\\)", 
+      "\\(\\lim\\)", "\\(\\frac{d}{dx}\\)", "\\(\\frac{\\partial}{\\partial x}\\)", 
+      "\\(\\frac{\\Delta y}{\\Delta x}\\)", "\\(\\frac{dy}{dx}\\)", 
+      "\\(\\frac{d^2y}{dx^2}\\)", "\\(\\frac{\\partial^2}{\\partial x^2}\\)", 
+      "\\(\\frac{\\partial^2 f}{\\partial x \\partial y}\\)", "\\(\\int_{a}^{b}\\)", 
+      "\\(\\sum_{n=1}^{\\infty}\\)", "\\(\\prod_{n=1}^{\\infty}\\)", 
+      "\\(\\lim_{x \\to \\infty}\\)", "\\(\\lfloor x \\rfloor\\)", 
+      "\\(\\lceil x \\rceil\\)"
+    ],
+    "relations": [
+      "\\(\\neg\\)", "\\(\\exists\\)", "\\(\\ni\\)", "\\(\\mid\\)", 
+      "\\(\\parallel\\)", "\\(\\sim\\)", "\\(\\approx\\)", "\\(=\\)", 
+      "\\(\\leq\\)", "\\(\\geq\\)", "\\(<\\)", "\\(>\\)", 
+      "\\(\\prec\\)", "\\(\\succ\\)", "\\(\\subseteq\\)", "\\(\\supseteq\\)", 
+      "\\(\\vdash\\)", "\\(\\Vdash\\)", 
+      "\\(\\triangleleft\\)", "\\(\\triangleright\\)", "\\(\\trianglelefteq\\)", 
+      "\\(\\trianglerighteq\\)", "\\(\\subseteqq\\)", "\\(\\supseteqq\\)", 
+      "\\(\\preceq\\)", "\\(\\succeq\\)", "\\(\\cong\\)", "\\(\\equiv\\)", 
+      "\\(\\approx\\)", "\\(\\asymp\\)"
+    ],
+    "negation": [
+      "\\(\\neg\\)", "\\(\\nexists\\)", "\\(\\notni\\)", "\\(\\nmid\\)", 
+      "\\(\\nparallel\\)", "\\(\\nsim\\)", "\\(\\not\\approx\\)", "\\(\\neq\\)", 
+      "\\(\\nleq\\)", "\\(\\ngeq\\)", "\\(\\nless\\)", "\\(\\ngtr\\)", 
+      "\\(\\nprec\\)", "\\(\\nsucc\\)", "\\(\\nsubseteq\\)", "\\(\\nsupseteq\\)", 
+      "\\(\\nvdash\\)", "\\(\\nVdash\\)", 
+      "\\(\\ntriangleleft\\)", "\\(\\ntriangleright\\)", "\\(\\ntrianglelefteq\\)", 
+      "\\(\\ntrianglerighteq\\)", "\\(\\nsubseteqq\\)", "\\(\\nsupseteqq\\)", 
+      "\\(\\npreceq\\)", "\\(\\nsucceq\\)", "\\(\\ncong\\)", "\\(\\not\\equiv\\)", 
+      "\\(\\not\\approx\\)", "\\(\\not\\asymp\\)"
+    ],
+    "misc": [
+      "\\(\\overline{a + b}\\)", "\\(\\frac{1}{2}\\)", "\\(\\tfrac{1}{2}\\)", 
+      "\\(\\dfrac{1}{2}\\)", "\\(\\cfrac{a}{1 + \\cfrac{1}{b}}\\)", 
+      "\\(\\sqrt{x}\\)", "\\(\\sqrt[3]{x}\\)"
+    ],
+    "examples": [
+      "\\(\\neg \\exists y (Q(y) \\land \\forall x \\neg R(x, y)) \\)", 
+      "\\(\\displaystyle\\sum_{i=1}^n\\)", 
+      "\\(\\underbrace{a+b+c}_{\\text{note}}\\)", 
+      "\\(\\cancel{5}\\)", "\\(\\sout{abc}\\)", 
+      "\\(\\boxed{\\pi=\\frac{c}{d}}\\)", 
+      "\\(\\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix}\\)", 
+      "\\(\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}\\)", 
+      "\\(\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}\\)", 
+      "\\(\\displaystyle\\sum_{\\substack{i \\in \\Lambda \\\\ 0 < j < n}}\\)"
+    ]
+  },
+  "buttonLabels": {
+    "logic": [
+      "Empty", "Negation", "AND", "NOT AND", "OR", "NOT OR", "Exclusive Or", "Exclusive NOT OR", 
+      "Equivalent", "Non-equivalent", "Implies", "Non-implication", "Converse", "Non-converse", "Always True", "Always False"
+    ],
+    "sets": [
+      "Complex Numbers", "Natural Numbers", "Rational Numbers", "Real Numbers", 
+      "Integers", "For All", "There Exists", "There Does Not Exist", 
+      "Empty Set", "Element Of", "Not Element Of", "Contains As Member", 
+      "Does Not Contain As Member", "Intersection", "Union", 
+      "Subset", "Superset", "Subset or Equal", "Superset Or Equal"
+    ],
+    "greek": [
+      "Alpha", "Beta", "Gamma", "Delta", "Epsilon", "Zeta", "Eta", "Theta", 
+      "Iota", "Kappa", "Lambda", "Mu", "Nu", "Xi", "Omicron", "Pi", 
+      "Rho", "Sigma", "Tau", "Upsilon", "Phi", "Chi", "Psi", "Omega"
+    ],
+    "functions": [
+      "Summation", "Product", "Integral", "Contour Integral", "Function composition", "Partial Derivative", 
+      "Nabla", "Delta", "Infinity", "Limit", "Derivative", "Partial Derivative", 
+      "Difference Quotient", "Second Derivative", "Second Partial Derivative", 
+      "Mixed Partial Derivative", "Definite Integral", "Infinite Sum", 
+      "Infinite Product", "Limit at Infinity", "Floor", "Ceiling"
+    ],
+    "misc": [
+      "Overline", "Fraction 1", "Fraction 2", "Fraction 3", "Fraction 4", 
+      "Square Root", "Cube Root"
+    ],
+    "relations": [
+      "Negation", "Exists", "Contains As Member", "Divides", "Parallel", "Similar", 
+      "Approx", "Equal", "Less Than Or Equal", "Greater Than Or Equal", 
+      "Less Than", "Greater Than", "Precedes", "Succeeds", "Subset Of", 
+      "Superset Of", "Syntactically Entails(Proves)", "Semantically Entails",
+      "Triangle Left", "Triangle Right", "Triangle Left Equal",  
+      "Triangle Right Equal", "Subset Of", "Superset Of", "Precedes", "Succeeds",  
+      "Congruent", "Equivalent", "Approx", "Asymptotic"
+    ],
+    "negation": [
+      "Negation", "Not Exists", "Does Not Contain as Member", "Not Divides", 
+      "Not Parallel", "Not Similar", "Not Approx", "Not Equal", 
+      "Not Less Than Or Equal", "Not Greater Than Or Equal", 
+      "Not Less Than", "Not Greater Than", "Not Precedes", 
+      "Not Succeeds", "Not Subset Of", "Not Superset Of", "Does Not Syntactically Entail", "Does Not Semantically Entail",
+      "Not Triangle Left", "Not Triangle Right", "Not Triangle Left Equal",
+      "Not Triangle Right Equal", "Not Subset Of", "Not Superset Of",
+      "Not Precedes", "Not Succeeds", "Not Congruent", "Not Equivalent",
+      "Not Approx", "Not Asymptotic"
+    ],
+    "examples": [
+      "Set Example", "Sum", "Underbrace", "Cancel", "Strikeout", 
+      "Boxed", "V Matrix", "B Matrix", "P Matrix", "Sum with Subarray"
+    ]
+  },
     "latexCopy": {
       "logic": [
         "\\\\empty", "\\\\neg", "\\\\land", "\\\\uparrow\\", "\\\\lor", "\\\\downarrow", "\\\\oplus", "\\\\odot", 
@@ -193,75 +193,200 @@
         "\\\\begin{pmatrix} a & b \\\\ c & d \\\\end{pmatrix}", 
         "\\\\displaystyle\\\\sum_{\\\\substack{i \\\\in \\\\Lambda \\\\ 0 < j < n}}"
         ]
+  },
+    "symbolCopy": {
+      "logic": [
+        "∅", "¬", "∧", "↑", "∨", "↓", "⊕", "⊙", 
+        "↔", "↮", "→", "↛", "←", "↚", "⊤", "⊥"
+      ],
+      "sets": [
+        "ℂ", "ℕ", "ℚ", "ℝ", 
+        "ℤ", "∀", "∃", "∄", 
+        "∅", "∈", "∉", "∋", "∌", 
+        "∩", "∪", "⊂", "⊃", 
+        "⊆", "⊇"
+      ],
+      "greek": [
+        "Α", "Β", "Γ", "Δ", 
+        "Ε", "Ζ", "Η", "Θ", 
+        "Ι", "Κ", "Λ", "Μ", 
+        "Ν", "Ξ", "Ο", "Π", 
+        "Ρ", "Σ", "Τ", "Υ", 
+        "Φ", "Χ", "Ψ", "Ω"
+      ],
+      "functions": [
+        "∑", "∏", "∫", "∮", "∘",
+        "∂", "∇", "Δ", "∞", 
+        "lim", "d/dx", "∂/∂x", 
+        "Δy/Δx", "dy/dx", 
+        "d²y/dx²", "∂²/∂x²", 
+        "∂²f/∂x∂y", "∫ₐᵇ", 
+        "∑ₙ₌₁^∞", "∏ₙ₌₁^∞", 
+        "limₓ→∞", "⌊x⌋", 
+        "⌈x⌉"
+      ],
+      "misc": [
+        "a̅ + b̅", "½", "½", 
+        "½", "a/(1 + 1/b)", 
+        "√x", "∛x"
+      ],
+      "relations": [
+        "¬", "∃", "∋", "|", 
+        "∥", "∼", "≈", "=", 
+        "≤", "≥", "<", ">", 
+        "≺", "≻", "⊆", "⊇", 
+        "⊢", "⊩", 
+        "◁", "▷", "◃", 
+        "▹", "⊆", "⊇", 
+        "≼", "≽", "≅", "≡", 
+        "≈", "≍"
+      ],
+      "negation": [
+        "¬", "∄", "∌", "∤", 
+        "∦", "≁", "≉", "≠", 
+        "≰", "≱", "≮", "≯", 
+        "⋠", "⋡", "⊈", "⊉", 
+        "⊬", "⊭", 
+        "⋪", "⋫", "⋬", 
+        "⋭", "⊈", "⊉", 
+        "⋠", "⋡", "≇", "≢", 
+        "≉", "≭"
+      ],
+      "examples": [
+        "¬∃y (Q(y) ∧ ∀x ¬R(x, y))", 
+        "∑ᵢ₌₁ⁿ", 
+        "a+b+c", 
+        "5", "abc", 
+        "π=c/d", 
+        "∣a & b ∣ c & d∣", 
+        "[a & b ∣ c & d]", 
+        "(a & b ∣ c & d)", 
+        "∑_{i ∈ Λ ∣ 0 < j < n}"
+      ]
     },
-        "symbolCopy": {
-          "logic": [
-            "∅", "¬", "∧", "↑", "∨", "↓", "⊕", "⊙", 
-            "↔", "↮", "→", "↛", "←", "↚", "⊤", "⊥"
-          ],
-          "sets": [
-            "ℂ", "ℕ", "ℚ", "ℝ", 
-            "ℤ", "∀", "∃", "∄", 
-            "∅", "∈", "∉", "∋", "∌", 
-            "∩", "∪", "⊂", "⊃", 
-            "⊆", "⊇"
-          ],
-          "greek": [
-            "Α", "Β", "Γ", "Δ", 
-            "Ε", "Ζ", "Η", "Θ", 
-            "Ι", "Κ", "Λ", "Μ", 
-            "Ν", "Ξ", "Ο", "Π", 
-            "Ρ", "Σ", "Τ", "Υ", 
-            "Φ", "Χ", "Ψ", "Ω"
-          ],
-          "functions": [
-            "∑", "∏", "∫", "∮", "∘",
-            "∂", "∇", "Δ", "∞", 
-            "lim", "d/dx", "∂/∂x", 
-            "Δy/Δx", "dy/dx", 
-            "d²y/dx²", "∂²/∂x²", 
-            "∂²f/∂x∂y", "∫ₐᵇ", 
-            "∑ₙ₌₁^∞", "∏ₙ₌₁^∞", 
-            "limₓ→∞", "⌊x⌋", 
-            "⌈x⌉"
-          ],
-          "misc": [
-            "a̅ + b̅", "½", "½", 
-            "½", "a/(1 + 1/b)", 
-            "√x", "∛x"
-          ],
-          "relations": [
-            "¬", "∃", "∋", "|", 
-            "∥", "∼", "≈", "=", 
-            "≤", "≥", "<", ">", 
-            "≺", "≻", "⊆", "⊇", 
-            "⊢", "⊩", 
-            "◁", "▷", "◃", 
-            "▹", "⊆", "⊇", 
-            "≼", "≽", "≅", "≡", 
-            "≈", "≍"
-          ],
-          "negation": [
-            "¬", "∄", "∌", "∤", 
-            "∦", "≁", "≉", "≠", 
-            "≰", "≱", "≮", "≯", 
-            "⋠", "⋡", "⊈", "⊉", 
-            "⊬", "⊭", 
-            "⋪", "⋫", "⋬", 
-            "⋭", "⊈", "⊉", 
-            "⋠", "⋡", "≇", "≢", 
-            "≉", "≭"
-          ],
-          "examples": [
-            "¬∃y (Q(y) ∧ ∀x ¬R(x, y))", 
-            "∑ᵢ₌₁ⁿ", 
-            "a+b+c", 
-            "5", "abc", 
-            "π=c/d", 
-            "∣a & b ∣ c & d∣", 
-            "[a & b ∣ c & d]", 
-            "(a & b ∣ c & d)", 
-            "∑_{i ∈ Λ ∣ 0 < j < n}"
-          ]
-        }
+  "inObsidian": {
+    "logic": [  
+      "$\\emptyset$", "$\\neg$", "$\\land$", "$\\uparrow$", "$\\lor$", "$\\downarrow$",  
+      "$\\oplus$", "$\\odot$", "$\\leftrightarrow$", "$\\nleftrightarrow$",  
+      "$\\rightarrow$", "$\\nrightarrow$", "$\\leftarrow$", "$\\nleftarrow$",  
+      "$\\top$", "$\\bot$"
+    ],
+    "sets": [  
+      "$\\mathbb{C}$", "$\\mathbb{N}$", "$\\mathbb{Q}$", "$\\mathbb{R}$", "$\\mathbb{Z}$",  
+      "$\\forall$", "$\\exists$", "$\\nexists$", "$\\empty$", "$\\in$",  
+      "$\\notin$", "$\\ni$", "$\\notni$", "$\\cap$", "$\\cup$",  
+      "$\\subset$", "$\\supset$", "$\\subseteq$", "$\\supseteq$"
+    ],
+    "greek": [  
+      "$\\Alpha$", "$\\Beta$", "$\\Gamma$", "$\\Delta$", "$\\Epsilon$",  
+      "$\\Zeta$", "$\\Eta$", "$\\Theta$", "$\\Iota$", "$\\Kappa$",  
+      "$\\Lambda$", "$\\Mu$", "$\\Nu$", "$\\Xi$", "$\\Omicron$",  
+      "$\\Pi$", "$\\Rho$", "$\\Sigma$", "$\\Tau$", "$\\Upsilon$",  
+      "$\\Phi$", "$\\Chi$", "$\\Psi$", "$\\Omega$"
+    ],
+    "functions": [  
+      "$\\sum$", "$\\prod$", "$\\int$", "$\\oint$", "$\\circ$", "$\\partial$",  
+      "$\\nabla$", "$\\Delta$", "$\\infty$", "$\\lim$", "$\\frac{d}{dx}$",  
+      "$\\frac{\\partial}{\\partial x}$", "$\\frac{\\Delta y}{\\Delta x}$",  
+      "$\\frac{dy}{dx}$", "$\\frac{d^2y}{dx^2}$", "$\\frac{\\partial^2}{\\partial x^2}$",  
+      "$\\frac{\\partial^2 f}{\\partial x \\partial y}$", "$\\int_{a}^{b}$",  
+      "$\\sum_{n=1}^{\\infty}$", "$\\prod_{n=1}^{\\infty}$", "$\\lim_{x \\to \\infty}$",  
+      "$\\lfloor x \\rfloor$", "$\\lceil x \\rceil$"
+    ],
+    "relations": [  
+      "$\\neg$", "$\\exists$", "$\\ni$", "$\\mid$", "$\\parallel$",  
+      "$\\sim$", "$\\approx$", "$=$", "$\\leq$", "$\\geq$",  
+      "$<$", "$>$", "$\\prec$", "$\\succ$", "$\\subseteq$", "$\\supseteq$",  
+      "$\\vdash$", "$\\Vdash$", "$\\triangleleft$", "$\\triangleright$",  
+      "$\\trianglelefteq$", "$\\trianglerighteq$", "$\\subseteqq$", "$\\supseteqq$",  
+      "$\\preceq$", "$\\succeq$", "$\\cong$", "$\\equiv$", "$\\approx$", "$\\asymp$"
+    ],
+    "negation": [  
+      "$\\neg$", "$\\nexists$", "$\\notni$", "$\\nmid$", "$\\nparallel$",  
+      "$\\nsim$", "$\\not\\approx$", "$\\neq$", "$\\nleq$", "$\\ngeq$",  
+      "$\\nless$", "$\\ngtr$", "$\\nprec$", "$\\nsucc$", "$\\nsubseteq$",  
+      "$\\nsupseteq$", "$\\nvdash$", "$\\nVdash$", "$\\ntriangleleft$",  
+      "$\\ntriangleright$", "$\\ntrianglelefteq$", "$\\ntrianglerighteq$",  
+      "$\\nsubseteqq$", "$\\nsupseteqq$", "$\\npreceq$", "$\\nsucceq$",  
+      "$\\ncong$", "$\\not\\equiv$", "$\\not\\approx$", "$\\not\\asymp$"
+    ],
+    "misc": [  
+      "$\\overline{a + b}$", "$\\frac{1}{2}$", "$\\tfrac{1}{2}$",  
+      "$\\dfrac{1}{2}$", "$\\cfrac{a}{1 + \\cfrac{1}{b}}$",  
+      "$\\sqrt{x}$", "$\\sqrt[3]{x}$"
+    ],
+    "examples": [  
+      "$\\neg \\exists y (Q(y) \\land \\forall x \\neg R(x, y))$",  
+      "$\\displaystyle\\sum_{i=1}^n$", "$\\underbrace{a+b+c}_{\\text{note}}$",  
+      "$\\cancel{5}$", "$\\sout{abc}$", "$\\boxed{\\pi=\\frac{c}{d}}$",  
+      "$\\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix}$",  
+      "$\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$",  
+      "$\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$",  
+      "$\\displaystyle\\sum_{\\substack{i \\in \\Lambda \\\\ 0 < j < n}}$"
+    ]
+  },
+
+  "Obsidian": {
+    "logic": [  
+      "$$\\emptyset$$", "$$\\neg$$", "$$\\land$$", "$$\\uparrow$$", "$$\\lor$$", "$$\\downarrow$$",  
+      "$$\\oplus$$", "$$\\odot$$", "$$\\leftrightarrow$$", "$$\\nleftrightarrow$$",  
+      "$$\\rightarrow$$", "$$\\nrightarrow$$", "$$\\leftarrow$$", "$$\\nleftarrow$$",  
+      "$$\\top$$", "$$\\bot$$"
+    ],
+    "sets": [  
+      "$$\\mathbb{C}$$", "$$\\mathbb{N}$$", "$$\\mathbb{Q}$$", "$$\\mathbb{R}$$", "$$\\mathbb{Z}$$",  
+      "$$\\forall$$", "$$\\exists$$", "$$\\nexists$$", "$$\\empty$$", "$$\\in$$",  
+      "$$\\notin$$", "$$\\ni$$", "$$\\notni$$", "$$\\cap$$", "$$\\cup$$",  
+      "$$\\subset$$", "$$\\supset$$", "$$\\subseteq$$", "$$\\supseteq$$"
+    ],
+    "greek": [  
+      "$$\\Alpha$$", "$$\\Beta$$", "$$\\Gamma$$", "$$\\Delta$$", "$$\\Epsilon$$",  
+      "$$\\Zeta$$", "$$\\Eta$$", "$$\\Theta$$", "$$\\Iota$$", "$$\\Kappa$$",  
+      "$$\\Lambda$$", "$$\\Mu$$", "$$\\Nu$$", "$$\\Xi$$", "$$\\Omicron$$",  
+      "$$\\Pi$$", "$$\\Rho$$", "$$\\Sigma$$", "$$\\Tau$$", "$$\\Upsilon$$",  
+      "$$\\Phi$$", "$$\\Chi$$", "$$\\Psi$$", "$$\\Omega$$"
+    ],
+    "functions": [  
+      "$$\\sum$$", "$$\\prod$$", "$$\\int$$", "$$\\oint$$", "$$\\circ$$", "$$\\partial$$",  
+      "$$\\nabla$$", "$$\\Delta$$", "$$\\infty$$", "$$\\lim$$", "$$\\frac{d}{dx}$$",  
+      "$$\\frac{\\partial}{\\partial x}$$", "$$\\frac{\\Delta y}{\\Delta x}$$",  
+      "$$\\frac{dy}{dx}$$", "$$\\frac{d^2y}{dx^2}$$", "$$\\frac{\\partial^2}{\\partial x^2}$$",  
+      "$$\\frac{\\partial^2 f}{\\partial x \\partial y}$$", "$$\\int_{a}^{b}$$",  
+      "$$\\sum_{n=1}^{\\infty}$$", "$$\\prod_{n=1}^{\\infty}$$", "$$\\lim_{x \\to \\infty}$$",  
+      "$$\\lfloor x \\rfloor$$", "$$\\lceil x \\rceil$$"
+    ],
+    "relations": [  
+      "$$\\neg$$", "$$\\exists$$", "$$\\ni$$", "$$\\mid$$", "$$\\parallel$$",  
+      "$$\\sim$$", "$$\\approx$$", "$$=$$", "$$\\leq$$", "$$\\geq$$",  
+      "$$<$$", "$$>$$", "$$\\prec$$", "$$\\succ$$", "$$\\subseteq$$", "$$\\supseteq$$",  
+      "$$\\vdash$$", "$$\\Vdash$$", "$$\\triangleleft$$", "$$\\triangleright$$",  
+      "$$\\trianglelefteq$$", "$$\\trianglerighteq$$", "$$\\subseteqq$$", "$$\\supseteqq$$",  
+      "$$\\preceq$$", "$$\\succeq$$", "$$\\cong$$", "$$\\equiv$$", "$$\\approx$$", "$$\\asymp$$"
+    ],
+    "negation": [  
+      "$$\\neg$$", "$$\\nexists$$", "$$\\notni$$", "$$\\nmid$$", "$$\\nparallel$$",  
+      "$$\\nsim$$", "$$\\not\\approx$$", "$$\\neq$$", "$$\\nleq$$", "$$\\ngeq$$",  
+      "$$\\nless$$", "$$\\ngtr$$", "$$\\nprec$$", "$$\\nsucc$$", "$$\\nsubseteq$$",  
+      "$$\\nsupseteq$$", "$$\\nvdash$$", "$$\\nVdash$$", "$$\\ntriangleleft$$",  
+      "$$\\ntriangleright$$", "$$\\ntrianglelefteq$$", "$$\\ntrianglerighteq$$",  
+      "$$\\nsubseteqq$$", "$$\\nsupseteqq$$", "$$\\npreceq$$", "$$\\nsucceq$$",  
+      "$$\\ncong$$", "$$\\not\\equiv$$", "$$\\not\\approx$$", "$$\\not\\asymp$$"
+    ],
+    "misc": [  
+      "$$\\overline{a + b}$$", "$$\\frac{1}{2}$$", "$$\\tfrac{1}{2}$$",  
+      "$$\\dfrac{1}{2}$$", "$$\\cfrac{a}{1 + \\cfrac{1}{b}}$$",  
+      "$$\\sqrt{x}$$", "$$\\sqrt[3]{x}$$"
+    ],
+    "examples": [  
+      "$$\\neg \\exists y (Q(y) \\land \\forall x \\neg R(x, y))$$",  
+      "$$\\displaystyle\\sum_{i=1}^n$$", "$$\\underbrace{a+b+c}_{\\text{note}}$$",  
+      "$$\\cancel{5}$$", "$$\\sout{abc}$$", "$$\\boxed{\\pi=\\frac{c}{d}}$$",  
+      "$$\\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix}$$",  
+      "$$\\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$$",  
+      "$$\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$$",  
+      "$$\\displaystyle\\sum_{\\substack{i \\in \\Lambda \\\\ 0 < j < n}}$$"
+    ]
+  }
 }
+
+

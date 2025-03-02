@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Italianno&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+
 :root {
   --primary-color: #e0e0e0;
   --secondary-color: #1a1a2e;
@@ -33,7 +34,7 @@ html, body {
   flex-direction: column;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Noto Sans", "Noto Sans Math", sans-serif;
+  font-family: 'Noto Sans', 'Noto Sans Math', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -49,7 +50,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
+  width: 100%; 
   height: 100%;
 }
 
@@ -65,22 +66,19 @@ html, body {
   padding: 12px;
   margin-bottom: 25px;
 }
-
 .header h1 {
   color: var(--primary-color);
   font-size: 2.5em;
   margin: 5px 2px;
 }
-
 .header p {
   color: var(--primary-color);
   font-size: 1.1em;
   margin: 0px 2px;
-  font-family: "Noto Sans Math", sans-serif;
+  font-family: 'Noto Sans Math', sans-serif;
   font-weight: 500;
   text-align: justify;
-  -moz-text-align-last: justify;
-       text-align-last: justify; /* justifies the last line too */
+  text-align-last: justify; /* justifies the last line too */
 }
 
 .header p::after {
@@ -92,16 +90,16 @@ html, body {
 .header-text-box {
   width: 800px;
   margin: 0 auto;
-  text-align: justify;
+  text-align: justify; 
 }
 
 .footer_container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   background-color: var(--secondary-color);
-  width: 100%;
+  width: 100%; 
   z-index: 8000;
   border-top: 1px solid var(--primary-color);
   padding: 10px;
@@ -123,7 +121,7 @@ html, body {
 
 .footer-sign {
   color: var(--text-color);
-  font-family: "Italianno", cursive;
+  font-family: 'Italianno', cursive;
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -136,6 +134,7 @@ html, body {
   width: 100%;
   margin-bottom: 20px;
 }
+
 
 .toggle-container {
   display: flex;
@@ -216,7 +215,7 @@ html, body {
 
 .toggle-style-button::after {
   content: "check";
-  font-family: "Material Symbols Outlined";
+  font-family: 'Material Symbols Outlined';
   font-size: 1.1em;
   margin-left: 5px;
   vertical-align: middle;
@@ -240,14 +239,13 @@ html, body {
   grid-template-columns: repeat(6, 125px);
   grid-template-rows: repeat(6, 125px);
   row-gap: 20px;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
   justify-content: center;
 }
 
 .grid-item {
   background-color: var(--toggle-bg-color);
-  border: 2px solid rgba(255, 255, 255, 0);
+  border: 2px solid #ffffff00;
   color: var(--primary-color);
   display: flex;
   flex-direction: column;
@@ -308,10 +306,10 @@ html, body {
 .grid-item .Btn .copied-check {
   display: inline-flex;
   align-items: center;
-  font-family: "Material Symbols Outlined";
+  font-family: 'Material Symbols Outlined';
   font-weight: normal;
   font-style: normal;
   font-size: 1.1em;
   vertical-align: middle;
   color: var(--primary-color);
-}/*# sourceMappingURL=style.css.map */
+}

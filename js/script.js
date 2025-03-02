@@ -3,12 +3,19 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('json/data.json')
         .then(response => response.json())
         .then(data => {
-            initialize(data.texts, data.buttonLabels, data.symbolCopy, data.latexCopy);
+            initialize(
+                data.texts,
+                data.buttonLabels,
+                data.symbolCopy,
+                data.latexCopy,
+                data.inObsidian,
+                data.Obsidian
+            );
         })
         .catch(error => console.error('Error loading data:', error));
 });
 
-function initialize(texts, buttonLabels, symbolCopy, latexCopy) {
+function initialize(texts, buttonLabels, symbolCopy, latexCopy, inObsidian, Obsidian) {
 
     document.addEventListener('click', (event) => {
         const gridItem = event.target.closest('.grid-item');
@@ -18,11 +25,19 @@ function initialize(texts, buttonLabels, symbolCopy, latexCopy) {
         const topic = gridItem.closest('.grid-container').getAttribute('data-topic');
         const index = Array.from(gridItem.parentNode.children).indexOf(gridItem);
         let textToCopy;
-        if (activeStyle === 'inline') {
+
+        if (activeStyle === 'inObsidian') {
+            textToCopy = inObsidian[topic][index];
+        } else if (activeStyle === 'Obsidian') {
+            textToCopy = Obsidian[topic][index];
+        } else if (activeStyle === 'inline') {
             textToCopy = symbolCopy[topic][index];
-        } else {
+        } else if (activeStyle === 'latex') {
             textToCopy = latexCopy[topic][index].replace(/\\\\/g, '\\');
+        } else {
+            textToCopy = symbolCopy[topic][index];
         }
+
         navigator.clipboard.writeText(textToCopy).then(() => {
             showCopiedAnimation(gridItem);
         }).catch(err => {
@@ -38,14 +53,12 @@ function initialize(texts, buttonLabels, symbolCopy, latexCopy) {
         ]
     });
 
-
     const toggleButtons = document.querySelectorAll('.toggle');
     toggleButtons.forEach(button => {
         button.addEventListener('click', () => {
             showContent(button.getAttribute('data-topic'), button, texts, buttonLabels);
         });
     });
-
 
     const toggleStyleButtons = document.querySelectorAll('.toggle-style-button');
     toggleStyleButtons.forEach(button => {
@@ -54,7 +67,6 @@ function initialize(texts, buttonLabels, symbolCopy, latexCopy) {
             button.classList.add('active');
         });
     });
-
 
     const defaultTopic = document.querySelector('.toggle.active').getAttribute('data-topic');
     const defaultButton = document.querySelector('.toggle.active');
